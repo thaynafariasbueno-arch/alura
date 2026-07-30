@@ -1,44 +1,252 @@
 
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-<title>blog</title>
-  </head>
-<style>
-header{
-  background-color: #FF51D4;
-  color: #000000;
-  text-aling: center;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 16px;
-}
-main{
-  background-color: #000000;
-  color: #FF51D4;
-  text-aling: center;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 16px;
-  
-}
- 
-</style>
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Death Note</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
 <body>
-<header>
-<h1>Meu blog tech</h1>
-<p1>Vou compartilhar conhecimentos sobre anime</p1>
-</header>
-<main>
-<img scrc="" alt="">
-<h2>Meu primeiro post</h2>
-<p>Por: Thayna Bueno</p>
-<p>Boas-vindas ao meu novo blog! Aqui vou compartilhar curiosidades sobre animes</p>  
-</main>
+
+    <header class="cabecalho">
+        <h1 class="logo">DEATH NOTE</h1>
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#personagens">Personagens</a>
+            <a href="#regras">Regras</a>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal">
+
+        <section id="inicio" class="banner">
+            <div class="banner-texto">
+                <h2>O duelo psicológico entre Light Yagami e L</h2>
+                <p>Análises, curiosidades e teorias sobre uma das maiores obras dos animes.</p>
+            </div>
+        </section>
+
+        <section id="sobre" class="postagem">
+            <h2>A História de Death Note</h2>
+            <p class="data">Publicado em 2026</p>
+            <p><strong>Death Note</strong> acompanha a história de Light Yagami, um estudante do ensino médio extraordinariamente inteligente que encontra um caderno misterioso com o poder de tirar a vida de qualquer pessoa cujo nome seja escrito nele.</p>
+            <p>À medida que assume a identidade de <em>Kira</em> para tentar criar um mundo sem crimes, ele entra em um grande confronto de inteligência contra <em>L</em>, o maior detetive do mundo.</p>
+        </section>
+
+        <section id="personagens" class="secao-cards">
+            <h2>Personagens Principais</h2>
+            <div class="container-cards">
+                
+                <div class="card">
+                    <h3>Light Yagami</h3>
+                    <p class="tag">Kira</p>
+                    <p>Um jovem genial que tenta moldar o mundo à sua própria visão de justiça usando o Death Note.</p>
+                </div>
+
+                <div class="card">
+                    <h3>L Lawliet</h3>
+                    <p class="tag">Detetive</p>
+                    <p>O enigmático e brilhante detetive encarregado de descobrir a verdadeira identidade de Kira.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Ryuk</h3>
+                    <p class="tag">Shinigami</p>
+                    <p>O Shinigami proprietário do caderno que o deixa cair no mundo dos humanos apenas por tédio.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="regras" class="regras-caderno">
+            <h2>Como Funciona o Caderno?</h2>
+            <ul>
+                <li>O humano cujo nome for escrito neste caderno morrerá.</li>
+                <li>O escritor precisa ter o rosto da vítima em mente para evitar atingir pessoas com o mesmo nome.</li>
+                <li>Se a causa da morte for escrita dentro de 40 segundos, ela acontecerá conforme informado.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; Projeto desenvolvido para o Alura. Tema: Death Note.</p>
+    </footer>
+
 </body>
-</html>
+</html>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111111;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #000000;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #8b0000;
+}
+
+.logo {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+
+.menu a {
+    color: #b0b0b0;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #8b0000;
+}
+
+/* Main */
+.conteudo-principal {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), #222;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    border: 1px solid #333;
+}
+
+.banner h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Postagem */
+.postagem {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    border-left: 4px solid #8b0000;
+}
+
+.postagem h2 {
+    font-family: 'Cinzel', serif;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.postagem .data {
+    font-size: 0.85rem;
+    color: #777777;
+    margin-bottom: 15px;
+}
+
+.postagem p {
+    margin-bottom: 15px;
+}
+
+/* Cards */
+.secao-cards h2 {
+    font-family: 'Cinzel', serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    border: 1px solid #2a2a2a;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #8b0000;
+}
+
+.card h3 {
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.card .tag {
+    display: inline-block;
+    background-color: #8b0000;
+    color: #ffffff;
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Regras */
+.regras-caderno {
+    background-color: #000000;
+    padding: 30px;
+    border: 1px dashed #555555;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.regras-caderno h2 {
+    font-family: 'Cinzel', serif;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.regras-caderno ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.regras-caderno li {
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #666666;
+    font-size: 0.9rem;
+    border-top: 1px solid #222222;
+}
+
